@@ -63,12 +63,11 @@ function Navbar() {
         <div className="md:hidden absolute top-full left-0 w-full bg-black/10 backdrop-blur-md py-4 px-4">
           <div className="flex flex-col space-y-4">
             {navItems.map((link) => (
-              <Link 
-                key={link.href} 
+              <Link
+                key={link.href}
                 href={link.href}
                 className="hover:text-[var(--primary-color)] transition-colors duration-300"
-                >
-
+              >
                 {link.label}
               </Link>
             ))}
