@@ -1,2 +1,19 @@
 @import "tailwindcss";
 
+:root {
+  --primary-color: #00D4FF;
+  --secondary-color: #090979;
+  --background-start: #0a0a0a;
+  --background-mid: #1a1a2e;
+  --background-end: #16213e;
+}
+
+body {
+  color: #ffffff;
+  background: linear-gradient(135deg, 
+    var(--background-start) 0%, 
+    var(--background-mid) 50%, 
+    var(--background-end) 100%
+  );
+  min-height: 100vh;
+}
