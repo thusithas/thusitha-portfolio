@@ -41,7 +41,7 @@ function Navbar() {
             ))}
           </div>
 
-          <div>
+          <div className="hidden md:block">
             <Link
               href="/contact"
               className="font-semibold border-2 border-[var(--primary-color)] rounded-xl px-5 py-2.5 hover:bg-[var(--primary-color)] hover:text-[var(--secondary-color)] transition-all duration-300"
