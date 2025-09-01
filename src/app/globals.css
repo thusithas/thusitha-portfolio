@@ -6,6 +6,14 @@
   --background-start: #0a0a0a;
   --background-mid: #1a1a2e;
   --background-end: #16213e;
+
+  --text-color : #c0c0c0;
+
+  --react-color: #00D8FF;
+  --laravel-color: #FF2D20;
+  --codeigniter-color: #DD4814;
+  --wordpress-color: #0073AA;
+  --figma-color: #00D8FF;
 }
 
 body {
@@ -16,4 +24,17 @@ body {
     var(--background-end) 100%
   );
   min-height: 100vh;
+  font-family: var(--font-geist-sans), sans-serif;
 }
+
+.figma-bg {
+  background: linear-gradient(
+    135deg,
+    rgba(242, 78, 30, 0.15) 0%,
+    rgba(255, 114, 98, 0.15) 30%,
+    rgba(162, 89, 255, 0.15) 55%,
+    rgba(26, 188, 254, 0.15) 80%,
+    rgba(10, 207, 131, 0.15) 100%
+  );
+}
+ 

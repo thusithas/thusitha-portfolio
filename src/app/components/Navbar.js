@@ -10,10 +10,10 @@ function Navbar() {
 
   const navItems = [
     { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/skills", label: "Skills" },
-    { href: "/projects", label: "Projects" },
-    { href: "/experience", label: "Experience" },
+    { href: "#about", label: "About" },
+    { href: "#skills", label: "Skills" },
+    { href: "#projects", label: "Projects" },
+    { href: "#experience", label: "Experience" },
   ];
   return (
     <nav className="fixed top-0 left-0 w-full bg-gray-900 shadow-md z-50">
