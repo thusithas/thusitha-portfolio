@@ -2,6 +2,7 @@
 import { Download, Eye } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import { Typewriter } from "react-simple-typewriter";
 
 function Hero() {
   return (
@@ -24,11 +25,20 @@ function Hero() {
               Hi, It's Thusitha
             </span>
           </h1>
-          <h1 className="text-3xl md:text-5xl text-[var(--primary-color)]">
+          <h1 className="text-3xl md:text-4xl text-[var(--primary-color)]">
             <span className="bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">
               I'm a
             </span>{" "}
-            Web Developer
+            <Typewriter 
+              words={["Web Developer", "Mobile App Developer", "UI/UX Designer"]}
+              loop={0}
+              cursor
+              cursoStyle="|"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1500}
+            />
+            
           </h1>
 
           <p className="text-[var(--text-color)] mt-4 text-sm md:text-base">
