@@ -73,7 +73,7 @@ function Hero() {
             <div className="absolute -top-12 left-5 md:top-10 md:-left-20 lg:-top-10 lg:-left-5 animate-float">
               <div className="bg-[#00D8FF]/20 border-[#00D8FF] border-2 w-10 h-10 md:w-16 md:h-16 flex items-center justify-center rounded-lg hover:scale-110 transition-transform duration-300">
                 <Image
-                  src="/images/react.png"
+                  src="/images/logos/react.png"
                   width={25}
                   height={25}
                   alt="React"
@@ -86,7 +86,7 @@ function Hero() {
             <div className="absolute -top-12 left-70 transform -translate-x-1/2 md:top-10 md:left-130 lg:-top-20 lg:left-60 animate-float-delayed">
               <div className="bg-[#0073AA]/20 border-[#0073AA] border-2 w-10 h-10 md:w-16 md:h-16 flex items-center justify-center rounded-lg hover:scale-110 transition-transform duration-300">
                 <Image
-                  src="/images/wordpress.png"
+                  src="/images/logos/wordpress.png"
                   width={25}
                   height={25}
                   alt="WordPress"
@@ -99,7 +99,7 @@ function Hero() {
             <div className="absolute top-35 -left-3 transform -translate-y-1/2 md:top-70 md:-left-20 lg:top-42 lg:-left-25 animate-float">
               <div className="bg-[#DD4814]/20 border-[#DD4814] border-2 w-10 h-10 md:w-16 md:h-16 flex items-center justify-center rounded-lg hover:scale-110 transition-transform duration-300">
                 <Image
-                  src="/images/codeigniter.png"
+                  src="/images/logos/codeigniter.png"
                   width={25}
                   height={25}
                   alt="CodeIgniter"
@@ -112,7 +112,7 @@ function Hero() {
             <div className="absolute top-30 left-73 md:top-60 md:left-125 lg:top-80 lg:-left-5 animate-float-delayed">
               <div className="bg-[#FF2D20]/20 border-[#FF2D20] border-2 w-10 h-10 md:w-16 md:h-16 flex items-center justify-center rounded-lg hover:scale-110 transition-transform duration-300">
                 <Image
-                  src="/images/laravel.png"
+                  src="/images/logos/laravel.png"
                   width={40}
                   height={40}
                   alt="Laravel"
@@ -125,7 +125,7 @@ function Hero() {
             <div className="absolute -bottom-15 left-1/2 transform -translate-x-1/2 md:-bottom-25 lg:-bottom-30 animate-float">
               <div className="figma-bg border-[#A259FF] border-2 w-10 h-10 md:w-16 md:h-16 flex items-center justify-center rounded-lg hover:scale-110 transition-transform duration-300">
                 <Image
-                  src="/images/figma.png"
+                  src="/images/logos/figma.png"
                   width={25}
                   height={25}
                   alt="Figma"

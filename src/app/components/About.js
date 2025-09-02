@@ -8,7 +8,7 @@ function About() {
     <div className="py-20 min-h-screen overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-16">
         {/* Heading */}
-        <h1 className="text-4xl text-center font-bold bg-gradient-to-b [var(--primary-color)] to-[var(--primary-color)] bg-clip-text text-transparent">
+        <h1 className="text-3xl md:text-4xl text-center font-bold bg-gradient-to-b [var(--primary-color)] to-[var(--primary-color)] bg-clip-text text-transparent">
           About Me
         </h1>
 
@@ -131,8 +131,8 @@ function About() {
                 </div>
 
                 {/* Skills */}
-                <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 w-full flex flex-wrap justify-center gap-2 p-4 border-t border-cyan-400/20">
-                  <div className="text-[var(--text-color)] bg-[var(--primary-color)]/10 text-center px-3 py-1 rounded-full text-xs border border-cyan-400/30">
+                <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 w-full flex flex-wrap justify-center gap-2 p-4 border-t border-[var(--primary-color)]/20">
+                  <div className="text-[var(--text-color)] bg-[var(--primary-color)]/10 text-center px-3 py-1 rounded-full text-xs border border-[var(--primary-color)]/30">
                     React
                   </div>
                   <div className="text-[var(--text-color)] bg-[var(--primary-color)]/10 text-center px-3 py-1 rounded-full text-xs border border-[var(--primary-color)]/30">
