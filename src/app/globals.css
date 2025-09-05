@@ -16,6 +16,10 @@
   --figma-color: #00D8FF;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #ffffff;
   background: linear-gradient(135deg, 

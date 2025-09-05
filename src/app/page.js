@@ -6,7 +6,9 @@ import Skills from './components/Skills'
 import Services from './components/Services'
 import Projects from './components/Projects'
 import Experience from './components/Experience'
-
+import BeyondCode from './components/BeyondCode'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 function page() {
   return (
     <div>
@@ -17,6 +19,9 @@ function page() {
       <Services />
       <Projects />
       <Experience />
+      <BeyondCode />
+      <Contact />
+      <Footer />
     </div>
   )
 }

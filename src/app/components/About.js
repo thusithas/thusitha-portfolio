@@ -5,7 +5,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className="py-20 min-h-screen overflow-hidden">
+    <div id="about" className="py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-16">
         {/* Heading */}
         <h1 className="text-3xl md:text-4xl text-center font-bold bg-gradient-to-b [var(--primary-color)] to-[var(--primary-color)] bg-clip-text text-transparent">

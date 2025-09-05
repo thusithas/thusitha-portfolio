@@ -6,7 +6,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 function Hero() {
   return (
-    <div className="py-20 min-h-screen overflow-hidden">
+    <div id="/" className="py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row justify-between items-center gap-8">
         {/* Left side */}
         <div className="flex-1 text-center lg:text-left">

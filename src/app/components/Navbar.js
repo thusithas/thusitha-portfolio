@@ -9,7 +9,7 @@ function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const navItems = [
-    { href: "/", label: "Home" },
+    { href: "#/", label: "Home" },
     { href: "#about", label: "About" },
     { href: "#skills", label: "Skills" },
     { href: "#projects", label: "Projects" },
@@ -43,7 +43,7 @@ function Navbar() {
 
           <div className="hidden md:block">
             <Link
-              href="/contact"
+              href="#contact"
               className="font-semibold border-2 border-[var(--primary-color)] rounded-xl px-5 py-2.5 hover:bg-[var(--primary-color)] hover:text-[var(--secondary-color)] transition-all duration-300"
             >
               Contact
