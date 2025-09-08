@@ -1,7 +1,10 @@
+"use client";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import { FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
+import animations from "./animation/variants";
 
 function Projects() {
   const projects = [
@@ -10,28 +13,38 @@ function Projects() {
       image: "/images/Catchafire.png",
       title: "Green Volunteer Network",
       description:
-        "I offer a range of services to help businesses and individuals build modern, scalable, ",
-      tags: ["Adobe Illustrator", "Photoshop"],
+        "A web application built with Laravel to connect volunteers with environmental projects and NGOs. It streamlines volunteer registration, event management, and project coordination while ensuring a simple and intuitive user experience.",
+      tags: ["Laravel", "MySQL"],
       code: "#",
       live: "#",
     },
     {
       id: 2,
       image: "/images/Catchafire.png",
-      title: "Green Volunteer Network",
+      title: "Interactive Resume Builder",
       description:
-        "I offer a range of services to help businesses and individuals build modern, scalable, ",
-      tags: ["Adobe Illustrator", "Photoshop"],
+        "A React-based tool that allows users to create, customize, and download professional resumes with ease. It features real-time previews, clean design templates, and a seamless user experience.",
+      tags: ["React", "Tailwind CSS"],
       code: "#",
       live: "#",
     },
     {
       id: 3,
       image: "/images/Catchafire.png",
-      title: "Green Volunteer Network",
+      title: "Personal Portfolio",
       description:
-        "I offer a range of services to help businesses and individuals build modern, scalable, ",
-      tags: ["Adobe Illustrator", "Photoshop"],
+        "A modern, responsive portfolio website developed with Next.js to showcase my skills, projects, and experiences. It highlights smooth animations, optimized performance, and a professional design.",
+      tags: ["Next.JS", "Tailwind CSS"],
+      code: "#",
+      live: "#",
+    },
+    {
+      id: 4,
+      image: "/images/Catchafire.png",
+      title: "Personal Portfolio",
+      description:
+        "A modern, responsive portfolio website developed with Next.js to showcase my skills, projects, and experiences. It highlights smooth animations, optimized performance, and a professional design.",
+      tags: ["Next.JS", "Tailwind CSS"],
       code: "#",
       live: "#",
     },
@@ -40,14 +53,39 @@ function Projects() {
     <div id="projects" className="py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-10">
         {/* Heading */}
-        <h1 className="text-3xl md:text-4xl text-center font-bold bg-gradient-to-b [var(--primary-color)] to-[var(--primary-color)] bg-clip-text text-transparent">
+        <motion.h1
+          variants={animations.fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="text-3xl md:text-4xl text-center font-bold bg-gradient-to-b [var(--primary-color)] to-[var(--primary-color)] bg-clip-text text-transparent"
+        >
           Featured Projects
-        </h1>
+        </motion.h1>
         {/* Paragraph */}
-        <p className="text-center text-[var(--text-color)] leading-relaxed text-sm md:text-lg"></p>
+        <motion.p
+          variants={animations.fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+          className="text-center text-[var(--text-color)] leading-relaxed text-sm md:text-lg"
+        >
+          Here are some of my featured projects that showcase my skills in
+          design, development, and problem-solving. Each project reflects my
+          passion for building practical solutions, experimenting with new
+          technologies, and creating user-friendly experiences.
+        </motion.p>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
+        <motion.div
+          variants={animations.fadeInRight}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto"
+        >
           {projects.map((project) => (
             <div
               key={project.id}
@@ -64,7 +102,7 @@ function Projects() {
               </div>
               {/* Content */}
               <div className="p-3 flex flex-col">
-                <h3 className="text-lg md:text-2xl font-medium text-center">
+                <h3 className="text-[var(--primary-color)] text-lg md:text-2xl font-bold text-center">
                   {project.title}
                 </h3>
                 <p className="text-sm md:text-[16px] text-[var(--text-color)] leading-relaxed mt-4 md:mt-5 text-justify">
@@ -102,7 +140,7 @@ function Projects() {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

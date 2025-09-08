@@ -1,3 +1,4 @@
+// page.js (updated)
 import React from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
@@ -9,9 +10,12 @@ import Experience from './components/Experience'
 import BeyondCode from './components/BeyondCode'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import FloatingShapes from './components/FloatingShapes'
+
 function page() {
   return (
     <div>
+      <FloatingShapes />
       <Navbar />
       <Hero />
       <About />

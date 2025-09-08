@@ -1,4 +1,7 @@
+"use client"
 import React from "react";
+import { motion } from "framer-motion";
+import animations from "./animation/variants";
 
 function Experience() {
   const experiences = [
@@ -8,7 +11,7 @@ function Experience() {
       company: "JFS ICT Services (Pvt) Ltd",
       period: "2025 Feb - 2025 Aug",
       description:
-        "Developing scalable web applications using React and Node.js. Leading UI/UX improvements that increased user engagement by 40%.",
+        "Working as an Associate Software Engineer at JFS ICT Services (Pvt) Ltd, I contribute to the development and optimization of full-stack web applications by writing clean, reusable, and efficient code following MVC best practices. I collaborate with cross-functional teams to deliver solutions that enhance application functionality and user experience, while leading the development of an Employees' Background Checking Web Application using Next.js and Tailwind CSS, with a focus on responsive UI, secure data handling.",
       side: "left",
     },
     {
@@ -17,7 +20,7 @@ function Experience() {
       company: "JFS ICT Services (Pvt) Ltd",
       period: "2024 Aug - 2025 Feb",
       description:
-        "Developing scalable web applications using React and Node.js. Leading UI/UX improvements that increased user engagement by 40%.",
+        "Completed  a  hands-on  internship  at  JFS  ICT  Services  (Pvt)  Ltd,where  I  contributed  to  web  application  development,  database management,  and  feature  implementation  using  CodeIgniter framework  and  PHP.  Worked  closely  with  the  team  to  enhance system functionality and optimize performance.",
       side: "right",
     },
   ];
@@ -25,11 +28,20 @@ function Experience() {
     <div id="experience" className="py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-10">
         {/* Heading */}
-        <h1 className="text-3xl md:text-4xl text-center font-bold bg-gradient-to-b [var(--primary-color)] to-[var(--primary-color)] bg-clip-text text-transparent">
-          Featured Projects
-        </h1>
+        <motion.h1
+          variants={animations.fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }} className="text-3xl md:text-4xl text-center font-bold bg-gradient-to-b [var(--primary-color)] to-[var(--primary-color)] bg-clip-text text-transparent">
+          Professional Experience
+        </motion.h1>
         {/* Paragraph */}
-        <p className="text-center text-[var(--text-color)] leading-relaxed text-sm md:text-lg"></p>
+        <motion.p
+          variants={animations.fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }} className="text-center text-[var(--text-color)] leading-relaxed text-sm md:text-lg"></motion.p>
 
         {/* Timeline Container */}
         <div className="relative">
@@ -37,8 +49,14 @@ function Experience() {
           <div className="absolute left-1/2 transform -translate-x-0.5 w-1 bg-gradient-to-b from-[var(--primary-color)] to-[var(--secondary-color)] h-full rounded-full shadow-lg shadow-blue-500/30"></div>
 
           {/* Experience Items */}
-          <div className="space-y-12">
-            {experiences.map((exp, index) => (
+          <motion.div
+          variants={animations.scaleUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }} 
+          className="space-y-12">
+            {experiences.map((exp) => (
               <div key={exp.id} className="relative flex items-center">
                 {/* Timeline Dot */}
                 <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-r from-[var(--primary-color)] to-blue-400 rounded-full border-4 border-slate-900 shadow-lg shadow-blue-500/50 z-10">
@@ -99,7 +117,7 @@ function Experience() {
                 </div>
               </div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

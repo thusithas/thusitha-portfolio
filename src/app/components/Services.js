@@ -1,6 +1,9 @@
+"use client";
 import { Code2, Palette, Server, Smartphone } from "lucide-react";
 import { FaWordpress } from "react-icons/fa";
 import React from "react";
+import { motion } from "framer-motion";
+import animations from "./animation/variants";
 
 function Services() {
   const services = [
@@ -39,19 +42,39 @@ function Services() {
     <div className="py-20  overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-10">
         {/* Heading */}
-        <h1 className="text-3xl md:text-4xl text-center font-bold bg-gradient-to-b [var(--primary-color)] to-[var(--primary-color)] bg-clip-text text-transparent">
+        <motion.h1
+          variants={animations.fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="text-3xl md:text-4xl text-center font-bold bg-gradient-to-b [var(--primary-color)] to-[var(--primary-color)] bg-clip-text text-transparent"
+        >
           Services
-        </h1>
+        </motion.h1>
         {/* Paragraph */}
-        <p className="text-center text-[var(--text-color)] leading-relaxed text-sm md:text-lg">
+        <motion.p
+          variants={animations.fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+          className="text-center text-[var(--text-color)] leading-relaxed text-sm md:text-lg"
+        >
           I offer a range of services to help businesses and individuals build
           modern, scalable, and visually appealing digital solutions. From
           full-stack web development to mobile apps and creative UI/UX design, I
           ensure quality and innovation in every project.
-        </p>
+        </motion.p>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6">
+        <motion.div
+          variants={animations.fadeInLeft}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+          className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6"
+        >
           {services.map((service, index) => (
             <div
               key={index}
@@ -67,12 +90,10 @@ function Services() {
               <p className="text-sm md:text-[16px] text-[var(--text-color)] leading-relaxed">
                 {service.description}
               </p>
-              <div className="absolute inset-0 bg-gradient-to-t from-[var(--primary-color)]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl">
-
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[var(--primary-color)]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

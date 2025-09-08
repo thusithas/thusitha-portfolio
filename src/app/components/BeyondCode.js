@@ -1,9 +1,17 @@
+"use client";
 import { BiLogoFigma } from "react-icons/bi";
-import { SiAdobeillustrator, SiAdobephotoshop, SiCanva, SiShutterstock } from "react-icons/si";
+import {
+  SiAdobeillustrator,
+  SiAdobephotoshop,
+  SiCanva,
+  SiShutterstock,
+} from "react-icons/si";
 import { FaYoutube } from "react-icons/fa";
 import Image from "next/image";
 import React from "react";
 import { MoveRight } from "lucide-react";
+import { motion } from "framer-motion";
+import animations from "./animation/variants";
 
 function BeyondCode() {
   const cards = [
@@ -21,7 +29,7 @@ function BeyondCode() {
         />,
         <SiShutterstock className="text-xl" />,
       ],
-      link: "#",
+      link: "https://stock.adobe.com/contributor/212370456/Thusitha",
     },
     {
       title: "UI/UX Design",
@@ -29,15 +37,19 @@ function BeyondCode() {
         "Designing intuitive, user-centered digital experiences in Figma. I focus on blending functionality with aesthetics to create engaging interfaces.",
 
       platforms: [<BiLogoFigma className="text-xl" />],
-      link: "#",
+      link: "https://www.behance.net/thusithasampath6",
     },
     {
       title: "Graphic Design",
       description:
         "From brand identities to digital art. Skilled with Illustrator, Photoshop, and Canva, I bring ideas to life visually",
 
-      platforms: [<SiAdobeillustrator className="text-xl" />, <SiAdobephotoshop className="text-xl" />, <SiCanva className="text-xl" />],
-      link: "#",
+      platforms: [
+        <SiAdobeillustrator className="text-xl" />,
+        <SiAdobephotoshop className="text-xl" />,
+        <SiCanva className="text-xl" />,
+      ],
+      link: "https://www.behance.net/thusithasampath6",
     },
     {
       title: "Content Creation",
@@ -45,25 +57,52 @@ function BeyondCode() {
         "Through our channel, I share knowledge and creative tutorials, making technology and design accessible to a wider audience",
 
       platforms: [<FaYoutube className="text-xl" />],
-      link: "#",
+      link: "https://www.youtube.com/@Codrawgraphic",
     },
   ];
   return (
     <div className="py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-10">
         {/* Heading */}
-        <h1 className="text-3xl md:text-4xl text-center font-bold bg-gradient-to-b [var(--primary-color)] to-[var(--primary-color)] bg-clip-text text-transparent">
-          Featured Projects
-        </h1>
+        <motion.h1
+          variants={animations.fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="text-3xl md:text-4xl text-center font-bold bg-gradient-to-b [var(--primary-color)] to-[var(--primary-color)] bg-clip-text text-transparent"
+        >
+          Beyond Code
+        </motion.h1>
         {/* Paragraph */}
-        <p className="text-center text-[var(--text-color)] leading-relaxed text-sm md:text-lg">
+        <motion.p
+          variants={animations.fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+          className="text-center text-[var(--text-color)] leading-relaxed text-sm md:text-lg"
+        >
           Exploring the intersection of technology and creativity through
           multiple disciplines
-        </p>
+        </motion.p>
 
-        <div className="bg-[var(--secondary-color)]/10">
+        <motion.div
+          variants={animations.fadeInRight}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+          className="bg-[var(--secondary-color)]/10"
+        >
           {/* Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <motion.div
+            variants={animations.fadeInRight}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          >
             {cards.map((card, index) => (
               <div
                 key={index}
@@ -91,14 +130,15 @@ function BeyondCode() {
                 {/* Button */}
                 <a
                   href={card.link}
+                  target="_blank"
                   className="inline-flex items-center justify-center gap-2 bg-[var(--primary-color)]/30 hover:bg-[var(--primary-color)] hover:text-[var(--secondary-color)] px-4 py-2 rounded-lg transition-colors duration-300 font-medium text-sm"
                 >
                   Explore <MoveRight />
                 </a>
               </div>
             ))}
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );
