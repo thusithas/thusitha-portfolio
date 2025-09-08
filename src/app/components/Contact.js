@@ -55,7 +55,7 @@ function Contact() {
         >
           Have a project in mind or want to collaborate? 
           <br />
-          Let's talk.
+          Let&apos;s talk.
         </motion.p>
         
         {/* Contact buttons container */}
@@ -68,6 +68,7 @@ function Contact() {
         >
             {icons.map((icon, index) => (
                 <motion.a
+                    key={index}
                     variants={animations.scaleUp}
                     initial="hidden"
                     whileInView="visible"
@@ -79,7 +80,6 @@ function Contact() {
                     }}
                     whileTap={{ scale: 0.9 }}
                     href={icon.link}
-                    key={index}
                     target="_blank"
                     className="text-[var(--primary-color)] hover:bg-white hover:text-[var(--secondary-color)] p-2 text-[30px] rounded-full transition-colors duration-300"
                  >
