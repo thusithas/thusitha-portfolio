@@ -36,7 +36,7 @@ function Hero() {
               className="text-3xl md:text-5xl text-[var(--primary-color)] mt-4"
             >
               <span className="bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] bg-clip-text text-transparent">
-                Hi, I'm Thusitha
+                Hi, I&apos;m Thusitha
               </span>
             </motion.h1>
             <motion.h1
@@ -195,7 +195,7 @@ function Hero() {
                   <div className="text-cyan-400 mt-2 ml-2 md:ml-4 text-xs md:text-sm">
                     &lt;<span className="text-pink-500">div</span>{" "}
                     <span className="text-yellow-300">className</span>=
-                    <span className="text-green-300">"portfolio"</span>&gt;
+                    <span className="text-green-300">&ldquo;portfolio&rdquo;</span>&gt;
                   </div>
                   <div className="ml-4 md:ml-8 text-cyan-400 text-xs md:text-sm">
                     &lt;<span className="text-pink-500">h1</span>&gt;

@@ -21,13 +21,21 @@ function BeyondCode() {
         "I capture and sell high-quality stock photos on Adobe Stock and Shutterstock, where my work has reached global audiences. My photography focuses on technology, lifestyle, and creative concepts.",
 
       platforms: [
-        <Image
-          src="/Images/logos/adobe stock.svg"
-          width={20}
-          height={20}
-          alt="Adobe Stock"
-        />,
-        <SiShutterstock className="text-xl" />,
+        {
+          icon: (
+            <Image
+              src="/Images/logos/adobe stock.svg"
+              width={20}
+              height={20}
+              alt="Adobe Stock"
+            />
+          ),
+          key: "adobe-stock",
+        },
+        {
+          icon: <SiShutterstock className="text-xl" />,
+          key: "shutterstock",
+        },
       ],
       link: "https://stock.adobe.com/contributor/212370456/Thusitha",
     },
@@ -36,7 +44,12 @@ function BeyondCode() {
       description:
         "Designing intuitive, user-centered digital experiences in Figma. I focus on blending functionality with aesthetics to create engaging interfaces.",
 
-      platforms: [<BiLogoFigma className="text-xl" />],
+      platforms: [
+        {
+          icon: <BiLogoFigma className="text-xl" />,
+          key: "figma",
+        },
+      ],
       link: "https://www.behance.net/thusithasampath6",
     },
     {
@@ -45,9 +58,18 @@ function BeyondCode() {
         "From brand identities to digital art. Skilled with Illustrator, Photoshop, and Canva, I bring ideas to life visually",
 
       platforms: [
-        <SiAdobeillustrator className="text-xl" />,
-        <SiAdobephotoshop className="text-xl" />,
-        <SiCanva className="text-xl" />,
+        {
+          icon: <SiAdobeillustrator className="text-xl" />,
+          key: "illustrator",
+        },
+        {
+          icon: <SiAdobephotoshop className="text-xl" />,
+          key: "photoshop",
+        },
+        {
+          icon: <SiCanva className="text-xl" />,
+          key: "canva",
+        },
       ],
       link: "https://www.behance.net/thusithasampath6",
     },
@@ -56,7 +78,12 @@ function BeyondCode() {
       description:
         "Through our channel, I share knowledge and creative tutorials, making technology and design accessible to a wider audience",
 
-      platforms: [<FaYoutube className="text-xl" />],
+      platforms: [
+        {
+          icon: <FaYoutube className="text-xl" />,
+          key: "youtube",
+        },
+      ],
       link: "https://www.youtube.com/@Codrawgraphic",
     },
   ];
@@ -120,9 +147,9 @@ function BeyondCode() {
 
                 {/* Platforms */}
                 <div className="flex gap-2 mb-5">
-                  {card.platforms.map((platform, i) => (
-                    <div key={i} className="bg-white/8 p-2 rounded-md">
-                      {platform}
+                  {card.platforms.map((platform) => (
+                    <div key={platform.key} className="bg-white/8 p-2 rounded-md">
+                      {platform.icon}
                     </div>
                   ))}
                 </div>
