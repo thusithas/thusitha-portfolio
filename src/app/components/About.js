@@ -119,7 +119,7 @@ function About() {
                         className="mt-6 p-2 bg-white rounded-lg"
                       >
                         <QRCodeCanvas
-                          value="http://localhost:3000/Thusitha-Sampath-CV.pdf"
+                          value="http://portfolio-thusitha/Thusitha-Sampath-CV.pdf"
                           size={80}
                           bgColor="#ffffff"
                           fgColor="#000000"
