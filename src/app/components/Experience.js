@@ -56,6 +56,7 @@ function Experience() {
           viewport={{ once: true }}
           transition={{ delay: 0.1 }} 
           className="space-y-12">
+
             {experiences.map((exp) => (
               <div key={exp.id} className="relative flex items-center">
                 {/* Timeline Dot */}
@@ -105,7 +106,7 @@ function Experience() {
                         <div className="inline-block px-3 py-1 bg-blue-500/20 border border-blue-400/30 rounded-full text-[12px] md:text-sm text-blue-300 font-medium">
                           {exp.period}
                         </div>
-                        <p className="text-sm md:text-base text-[var(--text-color)] leading-relaxed group-hover:text-slate-200 transition-colors duration-300">
+                        <p className="text-sm md:text-[15px] text-[var(--text-color)] leading-relaxed group-hover:text-slate-200 transition-colors duration-300">
                           {exp.description}
                         </p>
                       </div>

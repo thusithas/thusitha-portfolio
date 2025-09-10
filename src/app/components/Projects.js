@@ -15,7 +15,7 @@ function Projects() {
       description:
         "A web application built with Laravel to connect volunteers with environmental projects and NGOs. It streamlines volunteer registration, event management, and project coordination while ensuring a simple and intuitive user experience.",
       tags: ["Laravel", "MySQL"],
-      code: "#",
+      code: "https://github.com/thusithas/green-volunteer-network",
       live: "#",
     },
     {
@@ -25,7 +25,7 @@ function Projects() {
       description:
         "A React-based tool that allows users to create, customize, and download professional resumes with ease. It features real-time previews, clean design templates, and a seamless user experience.",
       tags: ["React", "Tailwind CSS"],
-      code: "#",
+      code: "https://github.com/thusithas/Interactive-Resume-Builder",
       live: "#",
     },
     {

@@ -88,7 +88,7 @@ function BeyondCode() {
     },
   ];
   return (
-    <div className="py-20 overflow-hidden">
+    <div id="beyondCode" className="py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-10">
         {/* Heading */}
         <motion.h1
