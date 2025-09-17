@@ -10,7 +10,7 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      image: "/images/Catchafire.png",
+      image: "/images/GVN UI.png",
       title: "Green Volunteer Network",
       description:
         "A web application built with Laravel to connect volunteers with environmental projects and NGOs. It streamlines volunteer registration, event management, and project coordination while ensuring a simple and intuitive user experience.",
@@ -38,16 +38,7 @@ function Projects() {
       code: "#",
       live: "#",
     },
-    {
-      id: 4,
-      image: "/images/Catchafire.png",
-      title: "Personal Portfolio",
-      description:
-        "A modern, responsive portfolio website developed with Next.js to showcase my skills, projects, and experiences. It highlights smooth animations, optimized performance, and a professional design.",
-      tags: ["Next.JS", "Tailwind CSS"],
-      code: "#",
-      live: "#",
-    },
+    
   ];
   return (
     <div id="projects" className="py-20 overflow-hidden">
