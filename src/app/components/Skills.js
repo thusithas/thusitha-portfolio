@@ -282,16 +282,16 @@ function Skills() {
                 {skill.name}
               </p>
               {/* Progress Bar */}
-              <div className="w-full bg-white/10 rounded-full h-1.5 md:h-2.5 z-10">
+              {/* <div className="w-full bg-white/10 rounded-full h-1.5 md:h-2.5 z-10">
                 <div
                   className="h-1.5 md:h-2.5 rounded-full bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)]"
                   style={{ width: `${skill.level}%` }}
                 ></div>
-              </div>
+              </div> */}
               {/* Percentage  */}
-              <span className="text-[var(--text-color)] text-sm md:text-lg">
+              {/* <span className="text-[var(--text-color)] text-sm md:text-lg">
                 {skill.level}%
-              </span>
+              </span> */}
             </motion.div>
           ))}
         </motion.div>

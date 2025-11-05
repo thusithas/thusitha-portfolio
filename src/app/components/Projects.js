@@ -8,8 +8,43 @@ import animations from "./animation/variants";
 
 function Projects() {
   const projects = [
+    
+
     {
       id: 1,
+      image: "/images/befend.png",
+      title: "BefEnd - Project Management Web App",
+      description:
+        "A modern project management platform built with Laravel and Tailwind CSS. BefEnd enables teams to collaborate efficiently through workspaces, projects, task tracking, calendars, and automated email notifications. Designed with a clean UI and role-based access control to streamline productivity and team communication.",
+      tags: ["Laravel 12", "Tailwind CSS", "MySQL", "JavaScript", "Blade"],
+      code: "https://github.com/thusithas/befend-project-manager",
+      live: "#",
+    },
+
+    {
+      id: 2,
+      image: "/images/Portfolio M.png",
+      title: "Personal Portfolio",
+      description:
+        "A modern, responsive portfolio website developed with Next.js to showcase my skills, projects, and experiences. It highlights smooth animations, optimized performance, and a professional design.",
+      tags: ["Next.JS", "Tailwind CSS"],
+      code: "https://github.com/thusithas/thusitha-portfolio",
+      live: "https://portfolio-thusitha.netlify.app/",
+    },
+
+    {
+      id: 3,
+      image: "/images/Cv builder.png",
+      title: "Interactive Resume Builder",
+      description:
+        "A React-based tool that allows users to create, customize, and download professional resumes with ease. It features real-time previews, clean design templates, and a seamless user experience.",
+      tags: ["React", "Tailwind CSS"],
+      code: "https://github.com/thusithas/Interactive-Resume-Builder",
+      live: "https://resume-builder-azure-beta.vercel.app/",
+    },
+
+    {
+      id: 4,
       image: "/images/GVN UI.png",
       title: "Green Volunteer Network",
       description:
@@ -18,26 +53,10 @@ function Projects() {
       code: "https://github.com/thusithas/green-volunteer-network",
       live: "#",
     },
-    {
-      id: 2,
-      image: "/images/Catchafire.png",
-      title: "Interactive Resume Builder",
-      description:
-        "A React-based tool that allows users to create, customize, and download professional resumes with ease. It features real-time previews, clean design templates, and a seamless user experience.",
-      tags: ["React", "Tailwind CSS"],
-      code: "https://github.com/thusithas/Interactive-Resume-Builder",
-      live: "#",
-    },
-    {
-      id: 3,
-      image: "/images/Catchafire.png",
-      title: "Personal Portfolio",
-      description:
-        "A modern, responsive portfolio website developed with Next.js to showcase my skills, projects, and experiences. It highlights smooth animations, optimized performance, and a professional design.",
-      tags: ["Next.JS", "Tailwind CSS"],
-      code: "#",
-      live: "#",
-    },
+
+
+    
+      
     
   ];
   return (
@@ -96,7 +115,7 @@ function Projects() {
                 <h3 className="text-[var(--primary-color)] text-lg md:text-2xl font-bold text-center">
                   {project.title}
                 </h3>
-                <p className="text-sm md:text-[16px] text-[var(--text-color)] leading-relaxed mt-4 md:mt-5 text-justify">
+                <p className="text-sm md:text-[15px] text-[var(--text-color)] leading-relaxed mt-4 md:mt-5 text-justify">
                   {project.description}
                 </p>
                 {/* Tags */}
