@@ -19,10 +19,10 @@ function Hero() {
             className="overflow-hidden shadow-[-20px_0px_50px_10px_rgba(0,200,255,0.8)] rounded-full w-[200px] h-[200px] mx-auto my-15 lg:m-10 bg-gradient-to-r from-[var(--primary-color)] to-[var(--primary-color)]"
           >
             <Image
-              src="/images/Me3.png"
+              src="/images/Me1.jpg"
               alt="myphoto"
-              width={180}
-              height={180}
+              width={220}
+              height={220}
               className="mx-auto lg:mx-auto object-cover"
             />
           </motion.div>
@@ -51,6 +51,8 @@ function Hero() {
                   "Web Developer",
                   "Mobile App Developer",
                   "UI/UX Designer",
+                  "Graphic Designer",
+                  "Content Creator",
                 ]}
                 loop={0}
                 cursor

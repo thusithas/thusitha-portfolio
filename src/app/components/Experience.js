@@ -6,7 +6,17 @@ import animations from "./animation/variants";
 function Experience() {
   const experiences = [
     {
-      id: 1,
+    id: 1,
+    title: "Graphic Designer",
+    company: "Sarathchandra and Company (Pvt) Ltd",
+    period: "2026 Jan - Present",
+    description:
+    "Designing creative visual content for digital and print marketing campaigns, social media platforms, and brand promotions across the Sarathchandra Group. Producing engaging graphics and video content while maintaining a consistent brand identity.",
+    side: "right",
+    },
+
+    {
+      id: 2,
       title: "Associate Software Engineer",
       company: "JFS ICT Services (Pvt) Ltd",
       period: "2025 Feb - 2025 Aug",
@@ -15,7 +25,7 @@ function Experience() {
       side: "left",
     },
     {
-      id: 2,
+      id: 3,
       title: "Software Engineer Intern",
       company: "JFS ICT Services (Pvt) Ltd",
       period: "2024 Aug - 2025 Feb",
